@@ -1,0 +1,39 @@
+.portfolio {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1*$card-gap);
+    margin-left: calc(-1*$card-gap);
+
+}
+
+
+
+
+.portfolio__item {
+
+    flex-basis: calc(100%/3 - $card-gap);
+    margin-left: $card-gap;
+    margin-top: $card-gap;
+
+}
+
+.portfolio__card-link:hover .overlay {
+    transform: translateY(0);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__card-link {
+    font-size: 18px;
+    color: $title-color;
+    display: block;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__card-link:hover,
+.portfolio__card-link:focus,
+.portfolio__card-link:active {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}

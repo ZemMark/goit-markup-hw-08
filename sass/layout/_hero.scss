@@ -1,0 +1,81 @@
+.hero>h1 {
+    color: #fff;
+    width: 696px;
+    text-transform: uppercase;
+    @include media();
+
+}
+.hero .hero-title {
+    letter-spacing: 0.06em;
+    margin: 0 auto;
+
+    color: #fff;
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    margin-bottom: 30px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    @media screen and (min-width:320px) {
+        display: flex;
+        align-items: center;
+        width: 360px;
+        height: 84px;
+
+        font-family: 'Roboto';
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.6;
+    
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+    }
+}
+.hero {
+    text-align: center;
+    /* outline: 5px solid red; */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc), url("../images/overlay.jpg");
+    max-width: 1600px;
+    height: 600px;
+    // margin: 0 auto;
+    padding: 200px 0;
+    background-color: $footer-hero-bgc;
+
+    // @include media()
+    @media screen and (min-width:320px) {
+        max-width: 480px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        background-repeat: no-repeat;
+        background-size: auto;
+        
+        background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc), url("../images/overlay.jpg");
+    }
+}
+.hero__button--secondary {
+    padding: 10px 32px;
+
+
+    background-color: $accent-color;
+    color: #ffffff;
+    line-height: 1.87;
+    font-weight: 700;
+    min-width: 216px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border: $accent-color;
+    border-radius: 4px;
+    /* position: absolute;
+    width: 216px;
+    height: 50px;
+    left: 692px;
+    top: 430px; */
+}

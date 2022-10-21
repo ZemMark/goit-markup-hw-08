@@ -1,0 +1,27 @@
+.card-metha {
+
+
+    border: 1px solid $portfolio-card-border-color;
+    border-top: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
+
+}
+.card-metha__subtitle {
+    font-size: 16px;
+    color: $primary-text-color;
+    line-height: 1.87;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 0.03em;
+}
+
+.card-metha__titel {
+    color: $title-color;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}

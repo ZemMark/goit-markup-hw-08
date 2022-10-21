@@ -1,0 +1,70 @@
+.features__subtitle {
+    color: $primary-text-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    letter-spacing: 0.03em;
+}
+
+.features__title {
+    font-size: 14px;
+    line-height: 1.14;
+    /* padding-top: 92px; */
+    margin-bottom: 10px;
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        max-width:450px;
+        
+    }
+}
+
+// .features__pictures-list {
+//     display: flex;
+// }
+
+.pictures-list__item {
+    width: 270px;
+    @media screen and (min-width: 320px) {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+.pictures-list__item::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-color: $before-features-bgc;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px;
+}
+
+.weather-radar::before {
+
+    background-image: url(../images/features/antenna.svg);
+}
+
+.clock::before {
+    background-image: url(../images/features/clock.svg);
+}
+
+.laptop::before {
+    background-image: url(../images/features/diagram.svg);
+}
+
+.spaceman::before {
+    background-image: url(../images/features/astronaut.svg);
+}
+
+
+
+
+.pictures-list__item:not(:last-child) {
+    margin-right: 30px;
+}

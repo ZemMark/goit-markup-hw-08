@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebStudio7-Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+
+</head>
+
+<body>
+  <header class="header-portfolio">
+    <div class="container flex-container">
+      <nav class="nav">
+        <a href="./index.html" lang="en" class="logo header__logo"><span
+            class="header__logo--blue">Web</span><span></span>Studio</a>
+        <ul class="nav-links list">
+          <li class="nav-links__item ">
+            <a href="./index.html" class="nav-links__link">Студія</a>
+          </li>
+
+          <li class="nav-links__item ">
+            <a href="./portfolio.html" class="nav-links__link nav-links__item--current">Портфоліо</a>
+          </li>
+
+          <li class="nav-links__item"><a href="" class="nav-links__link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="header-contacts list">
+        <li>
+          <a href="mailto:info@devstudio.com" class="header-contacts__contact link"><svg
+              class="header-contacts__mini-icon">
+              <use href="./images/header icons/symbol-defs.svg#envelope"></use>
+            </svg>info@devstudio.com</a>
+        </li>
+        <li>
+          <a href="tel:+380961111111" class="header-contacts__contact link"><svg
+              class="header-contacts__mini-icon header-contacts__mini-icon--phone">
+              <use href="./images/header icons/symbol-defs.svg#phone"></use>
+            </svg>+38 096 111 11 11</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <!-- Портфоліо -->
+      <h1 class="visually-hidden">Портфоліо</h1>
+      <div class="container">
+        <ul class="filter list">
+          <li class="filter__item">
+            <button type="button" class="filter__button-primary">Усі</button>
+          </li>
+          <li class="filter__item">
+            <button type="button" class="filter__button-primary">Веб-сайти</button>
+          </li>
+          <li class="filter__item">
+            <button type="button" class="filter__button-primary">Додатки</button>
+          </li>
+          <li class="filter__item">
+            <button type="button" class="filter__button-primary">Дизайн</button>
+          </li>
+          <li class="filter__item">
+            <button type="button" class="filter__button-primary">Маркетинг</button>
+          </li>
+        </ul>
+
+        <ul class="portfolio list">
+          <li class="portfolio__item">
+            <a href="" class="portfolio__card-link link">
+              <div class="thumb">
+                <img src="./images/portfolio/laptop.jpg" alt="ноутбук з зображенням веб-сторінки" width="370" />
+                <div class="thumb__overlay">
+                  <p class="thumb__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                    сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div>
+              <div class="card-metha">
+                <h2 class="card-metha__titel">Технокряк</h2>
+                <p class="card-metha__subtitle">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio__item">
+            <article class="card">
+              <a href="" class="portfolio__card-link link">
+                <img src="./images/portfolio/basketball.jpg" alt="два хлоаця грають в баскетбол" width="370" />
+                <!-- </a>
+              <a href="" class="portfolio-link link"> -->
+                <div class="card-metha">
+                  <h2 class="card-metha__titel">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                  <p class="card-metha__subtitle">Дизайн</p>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="portfolio__item">
+            <article class="card">
+              <a href="" class="portfolio__card-link link">
+                <img src="./images/portfolio/seafood.jpg" alt="логотип ресторану з однотонним лососем на задньому фоні"
+                  width="370" />
+                <!-- </a>
+              <a href="" class="portfolio-link link"> -->
+                <div class="card-metha">
+                  <h2 class="card-metha__titel">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="card-metha__subtitle">Додаток</p>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="portfolio__item">
+            <article class="card">
+              <a href="" class="portfolio__card-link link">
+                <img src="./images/portfolio/headphones.jpg" alt="навушники" width="370" />
+                <!-- </a>
+
+              <a href="" class="portfolio-link link"> -->
+                <div class="card-metha">
+                  <h2 class="card-metha__titel">Проєкт <span lang="en">Prime</span></h2>
+                  <p class="card-metha__subtitle">Маркетинг</p>
+                </div>
+              </a>
+
+            </article>
+          </li>
+
+          <li class="portfolio__item">
+            <article class="card">
+              <a href="" class="portfolio__card-link link">
+                <img src="./images/portfolio/boxes.jpg" alt="дві коробки" width="370" />
+                <!-- </a>
+              <a href="" class="portfolio-link link"> -->
+                <div class="card-metha">
+                  <h2 class="card-metha__titel">Проєкт <span lang="en">Boxes</span></h2>
+                  <p class="card-metha__subtitle">Додаток</p>
+                </div>
+              </a>
+
+            </article>
+          </li>
+
+          <li class="portfolio__item">
+            <article class="card">
+              <a href="" class="portfolio__card-link link">
+                <img src="./images/portfolio/iMac.jpg" alt="комп'ютер відомої марки" width="370" />
+                <!-- </a>
+              <a href="" class="portfolio-link link"> -->
+                <div class="card-metha">
+                  <h2 class="card-metha__titel" lang="en">Inspiration has no Borders</h2>
+                  <p class="card-metha__subtitle">Веб-сайт</p>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="portfolio__item border">
+            <article class="card">
+              <a href="" class="portfolio__card-link link">
+                <img src="./images/portfolio/book.jpg" alt="журнал" width="370" />
+                <!-- </a>
+              <a href="" class="portfolio-link link"> -->
+                <div class="card-metha">
+                  <h2 class="card-metha__titel">Видання <span lang="en">Limited Edition</span></h2>
+                  <p class="card-metha__subtitle">Дизайн</p>
+                </div>
+              </a>
+
+            </article>
+          </li>
+
+          <li class="portfolio__item">
+            <article class="card">
+              <a href="" class="portfolio__card-link link">
+                <img src="./images/portfolio/lab.jpg" alt="картонний ярлик з логотипом проєкту" width="370" />
+                <!-- </a>
+              <a href="" class="portfolio-link link"> -->
+                <div class="card-metha">
+                  <h2 class="card-metha__titel">Проєкт <span lang="en">LAB</span></h2>
+                  <p class="card-metha__subtitle">Маркетинг</p>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="portfolio__item">
+            <article class="card">
+              <a href="" class="portfolio__card-link link">
+                <img src="./images/portfolio/hands.jpg" alt="руки над клавіатурою ноутбуку" width="370" />
+                <!-- </a>
+                <a href="" class="portfolio-link link"> -->
+                <div class="card-metha">
+                  <h2 class="card-metha__titel" lang="en">Growing Business</h2>
+                  <p class="card-metha__subtitle">Додаток</p>
+                </div>
+              </a>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container multi-block">
+      <div class="set-container">
+        <a lang="en" href="./index.html" class="logo footer__logo"><span class="footer__logo--blue">Web</span>Studio</a>
+        <address class="address">
+          <ul class="address-links list">
+            <li>
+              <a href="https://goo.gl/maps/rEYh6PdM1hheBsNV8" class="link" target="_blank"
+                rel="nooper noreferrer nofollow"><span class="address-links__map">м. Київ, пр-т Лесі Українки,
+                  26</span></a>
+            </li>
+            <li class="address-links__item">
+              <a href="mailto:info@devstudio.com" class="address-links__contact link">info@devstudio.com</a>
+            </li>
+            <li class="address-links__item">
+              <a href="tel:+380961111111" class="address-links__contact link">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+      <div class="footer-socials__container">
+        <p class="footer-socails__heading">приєднуйтесь</p>
+        <ul class="footer-socials list">
+          <li>
+            <a class="footer-socials__button">
+              <svg class="footer-socials__icon">
+                <use href="./images/footer/symbol-defs.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a class="footer-socials__button">
+              <svg class="footer-socials__icon">
+                <use href="./images/footer/symbol-defs.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer-socials__button">
+              <svg class="footer-socials__icon">
+                <use href="./images/footer/symbol-defs.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer-socials__button">
+              <svg class="footer-socials__icon">
+                <use href="./images/footer/symbol-defs.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <form action="email" class="footer-form">
+        <p class="footer-form__heading">Підпишіться на розсилку</p>
+        <div class="footer-form__container">
+          <label for="email">
+            <input class="footer-form__input" type="email" name="email" placeholder="Email" required>
+          </label>
+          <button class="footer-form__button-subscribe" type="submit">Підписатися</button>
+        </div>
+      </form>
+    </div>
+  </footer>
+</body>
+
+</html>

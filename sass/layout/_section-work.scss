@@ -1,0 +1,38 @@
+.section-work {
+    padding-top: 0;
+    padding-bottom: 94px;
+    @media screen and (min-width: 320px) and (max-width: 786px) {
+        display: none;
+        }
+}
+
+.work {
+    display: flex;
+    
+}
+
+.work__item:not(:last-child) {
+    margin-right: 30px;
+
+}
+
+.work__item {
+    width: 370px;
+    position: relative;
+}
+
+.work__text {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    position: absolute;
+    bottom: 0;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 70px;
+    width: 100%;
+
+    background-color: $work-overlay-color;
+}

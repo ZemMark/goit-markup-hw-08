@@ -1,0 +1,74 @@
+.card-button>li+li {
+    padding-left: 10px;
+
+}
+
+
+.card-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+
+    &__link {
+        border: none;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        color: $gray-icons-social;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition-property: background-color, color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $accent-color;
+            color: #fff;
+        }
+    }
+}
+
+
+// .card-button__link {
+//     border: none;
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50%;
+//     color: var(--gray-icons-social);
+
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     transition-property: background-color, color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover,
+//     &:active,
+//     &:focus{
+//         background-color: var(--accent-color);
+//         color: #fff;
+//     }
+
+
+// }
+
+.card-button__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor
+}
+
+// .social-button:hover,
+// .social-button:focus,
+// .social-button:active {
+//     background-color: var(--accent-color);
+//     color: #fff;
+// }

@@ -1,0 +1,28 @@
+body{
+    font-family: Roboto, sans-serif;
+    color: $title-color;
+    background-color: #ffffff;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+}
+
+.list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link{
+    text-decoration: none;
+}
+.flex-container {
+    display: flex;
+}
+button{
+    cursor: pointer;
+}
+
+a {
+    
+    cursor: pointer;
+}
