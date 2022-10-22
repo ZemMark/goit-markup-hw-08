@@ -3,10 +3,7 @@
 
 
     /* HELP!!!!!!!! Я НЕ РОЗУМІЮ ЧОГО НЕ ПЕРЕЗАПИСУЄТЬСЯ КОЛІР ДЛЯ ЦІЄЇ СЕКЦІЇ, А НАСТЛІДУЄЬБСЯ З body. у тегу 
-  .team.bgc специфічність 20, а body - 1 */ 
-    @media screen and (min-width: 320px) and (max-width: 786px) {
-        width: 100%;
-    }
+  .team.bgc специфічність 20, а body - 1 */
 
 }
 
@@ -16,22 +13,17 @@
     padding: 0;
 }
 .team-members__worker:not(:last-child) {
-    // margin-right: 30px;
     margin-bottom: 30px;
 }
 .team-members__worker {
     background: #FFFFFF;
-    min-width: 270px;
-
-
+    
+    
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    @media screen and (min-width: 320px) and (max-width: 786px) {
+    @include phone {
         max-width: 450px;
-        max-height: 622px;
-
-        margin: 0 auto;
-            
+        height: 622px;
     }
 }
 
@@ -57,6 +49,9 @@
 
 
 }
+.card-photo__photo{
+    width: 450px;
+}
 
 // .team-card__heading {
 //     margin-bottom: 10px;
@@ -77,8 +72,4 @@
 //     text-align: center;
 
 // }
-
-img{
-    width: 100%
-}
 

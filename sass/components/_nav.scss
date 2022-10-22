@@ -1,10 +1,5 @@
 .nav {
     display: flex;
-    @media screen and (max-width: 320px) and (max-width: 786px) {
-        max-width: 100%;
-        
-    
-    }
 }    
 .nav-links {
     padding-bottom: 0px;
@@ -14,32 +9,24 @@
     align-items: center;
     margin-top: 0;
     margin-bottom: 0;
+    @media screen and (max-width: 768px) {
+        display: none;
+        }
 
 
 }    
-
-.nav-links__item{
+.nav-links__item--current{
     position: relative;
-    @media screen and (min-width: 320px) and (max-width: 786px) {
-        display: none;
-    
-    }
 }
-
-
 .nav-links__item:not(:last-child) {
     margin-right: 50px;
-}
-.nav-links__link.nav-links__item--current{
-    color: $accent-color;
-
 }
 .nav-links__item--current::after {
     content: "";
     position: absolute;
     bottom: 0;
-    align-items: flex-end;
-    display: flex;
+    left:0;
+
     width: 100%;
 
 

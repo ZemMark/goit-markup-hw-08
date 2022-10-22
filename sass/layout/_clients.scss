@@ -1,21 +1,32 @@
 .clients {
-    display: flex;
-    justify-content: center;
-    flex-basis: calc((100% - 2 * 30px)/2);
+    @include phone {
+        justify-content: center;
+        
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: calc((100% - 2*30px)/2);
+    } 
+    // display: block;
+
+    // justify-content: center;
+
 
     &__image{
         color: currentColor;
         width: 170px;
         height: 92px;
-        
+        @include phone {
+            max-width: 210;
+            max-height: 92px;
+        }
     }
 
     &__link{
         display: flex;
         justify-content: center;
     
-        width: 170px;
-        height: 92px;
+        // width: 170px;
+        // height: 92px;
     
         fill: #AFB1B8;
         border: 1px solid #AFB1B8;
@@ -24,6 +35,10 @@
         transition-property: background-color, fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include phone{
+            max-width: 210;
+            max-height: 92px;
+        }
     }
     &__link:hover,
     &__link:active,
@@ -33,7 +48,12 @@
     }
 
 }
-
+.clients__item{
+    margin: 15px;
+    @media screen and (min-width:480px) {
+        margin: 15px;
+    }
+}
 // .clients__link {
 //     display: flex;
 //     justify-content: center;
@@ -58,9 +78,9 @@
 //     border-color: var(--accent-color);
 // }
 
-.clients>li:not(:last-child) {
-    margin-right: 30px;
-}
+// .clients>li:not(:last-child) {
+//     margin-right: 30px;
+// }
 
 // .clients__image {
 //     color: currentColor;

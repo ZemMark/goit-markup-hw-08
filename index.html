@@ -5,8 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WebStudio8-Home</title>
+  <title>WebStudio7-Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet"
@@ -22,7 +21,7 @@
         <a href="./index.html" lang="en" class="logo header__logo"><span
             class="header__logo--blue">Web</span><span></span>Studio</a>
         <ul class="nav-links list">
-          <li class="nav-links__item">
+          <li class="nav-links__item ">
             <a href="./index.html" class="nav-links__link nav-links__item--current">Студія</a>
           </li>
 
@@ -60,7 +59,6 @@
     </section>
 
     <section class="section">
-      <!-- переваги -->
 
       <div class="container">
         <h2 class="features visually-hidden">переваги</h2>
@@ -118,7 +116,8 @@
         <h2 class="section-title">Наша команда</h2>
         <ul class="list team-members">
           <li class="team-members__worker">
-            <img src="./images/designer.jpg" alt="Розробник продукту Ігор Дем'яненко" width="270" />
+            <img class="card-photo__photo" src="./images/designer.jpg" alt="Розробник продукту Ігор Дем'яненко"
+              width="270" />
             <div class="team-card">
               <h3 class="team-card__heading">Ігор Дем'яненко</h3>
               <p class="team-card__job" lang="en">Product Designer</p>
@@ -158,7 +157,8 @@
           </li>
 
           <li class="team-members__worker">
-            <img src="./images/developer.jpg" alt="Фронтенд розробник Ольга Рєпіна" width="270" />
+            <img class="card-photo__photo" src="./images/developer.jpg" alt="Фронтенд розробник Ольга Рєпіна"
+              width="270" />
             <div class="team-card">
               <h3 class="team-card__heading">Ольга Рєпіна</h3>
               <p class="team-card__job" lang="en">Frontend Developer</p>
@@ -198,7 +198,7 @@
           </li>
 
           <li class="team-members__worker">
-            <img src="./images/marketing.jpg" alt="Маркетолог Микола Тарасов" width="270" />
+            <img class="card-photo__photo" src="./images/marketing.jpg" alt="Маркетолог Микола Тарасов" width="270" />
             <div class="team-card">
               <h3 class="team-card__heading">Микола Тарасов</h3>
               <p class="team-card__job" lang="en">Marketing</p>
@@ -239,7 +239,7 @@
 
           <li class="team-members__worker">
             <div class="card-photo">
-              <img src="./images/member.jpg" alt="Розробник інтерфейсу" width="270" />
+              <img class="card-photo__photo" src="./images/member.jpg" alt="Розробник інтерфейсу" width="270" />
             </div>
             <div class="team-card">
               <h3 class="team-card__heading">Михайло Єрмаков</h3>
@@ -285,7 +285,7 @@
       <div class="container">
         <h2 class="section-title">Постійні клієнти</h2>
         <ul class="clients list">
-          <li>
+          <li class="clients__item">
             <a href="" class="clients__link">
               <svg class="clients__image">
                 <use href="./images/clients/symbol-defs.svg#client-1"></use>
@@ -293,15 +293,15 @@
             </a>
           </li>
 
-          <li>
-            <a href="" class="clients__link">
+          <li class="clients__item">
+            <a href="" class=" clients__link">
               <svg class="clients__image">
                 <use href="./images/clients/symbol-defs.svg#client-2"></use>
               </svg>
             </a>
           </li>
 
-          <li>
+          <li class="clients__item">
             <a href="" class="clients__link">
               <svg class="clients__image">
                 <use href="./images/clients/symbol-defs.svg#client-3"></use>
@@ -309,7 +309,7 @@
             </a>
           </li>
 
-          <li>
+          <li class="clients__item">
             <a href="" class="clients__link">
               <svg class="clients__image">
                 <use href="./images/clients/symbol-defs.svg#client-4"></use>
@@ -317,7 +317,7 @@
             </a>
           </li>
 
-          <li>
+          <li class="clients__item">
             <a href="" class="clients__link">
               <svg class="clients__image">
                 <use href="./images/clients/symbol-defs.svg#client-5"></use>
@@ -325,7 +325,7 @@
             </a>
           </li>
 
-          <li>
+          <li class="clients__item">
             <a href="" class="clients__link">
               <svg class="clients__image">
                 <use href="./images/clients/symbol-defs.svg#client-6"></use>
@@ -334,7 +334,7 @@
           </li>
         </ul>
       </div>
-    </section>
+      <!--</section>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__button-close" type="button" data-modal-close>
@@ -374,16 +374,11 @@
             <label class="modal__label" for="comment">Коментар</label>
             <textarea class="modal__comment" name="comment" id="comment" cols="30" rows="10"
               placeholder="Введіть текст"></textarea>
-            <!-- <div class="modal-container">
-              <div class="checkbox-section">
-                <span class="check-box"></span>
-              </div> -->
             <label class="modal__checkbox-label">
               <input class="modal__checkbox" type="checkbox" name="checkbox" required>
               <span class="modal__checkbox-icon"></span>
               Погоджуюся з розсилкою та приймаю <a class="modal__privasy-agreemant" href=""> Умови договору</a>
             </label>
-            <!-- </div> -->
             <div class="modal__button-submit">
               <button class="submit" type="submit">Відправити</button>
             </div>
@@ -400,8 +395,8 @@
           <ul class="address-links list">
             <li>
               <a href="https://goo.gl/maps/rEYh6PdM1hheBsNV8" class="link" target="_blank"
-                rel="nooper noreferrer nofollow"><span class="address-links__map">м. Київ, пр-т Лесі Українки,
-                  26</span></a>
+                rel="nooper noreferrer nofollow"><span class="address-links__map">м. Київ, пр-т Лесі
+                  Українки,26</span></a>
             </li>
             <li class="address-links__item">
               <a href="mailto:info@devstudio.com" class="address-links__contact link">info@devstudio.com</a>
@@ -460,4 +455,4 @@
   <script src="./js/modal.js"></script>
 </body>
 
-</html>
+</html> -->

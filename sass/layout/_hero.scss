@@ -1,32 +1,48 @@
-.hero>h1 {
-    color: #fff;
-    width: 696px;
-    text-transform: uppercase;
-    @include media();
+// .hero>h1 {
+//     color: #fff;
+//     text-transform: uppercase;
+//     @include phone{
+//         max-width: 360px;
+//         // height: 84px;
+        
+    
+//         // font-family: 'Roboto';
+//         // font-style: normal;
+//         font-weight: 900;
+//         font-size: 26px;
+//         line-height: 1.6;
+    
+//         text-align: center;
+//         letter-spacing: 0.06em;
+//         text-transform: uppercase;
+    
+//         color: #FFFFFF;
 
-}
+//     }
+// }
 .hero .hero-title {
     letter-spacing: 0.06em;
     margin: 0 auto;
 
     color: #fff;
-    width: 696px;
     font-weight: 900;
-    font-size: 44px;
+    font-size: 24px;
     margin-bottom: 30px;
     line-height: 1.36;
     text-transform: uppercase;
-    @media screen and (min-width:320px) {
-        display: flex;
-        align-items: center;
-        width: 360px;
-        height: 84px;
-
+    @include phone{
+        
+        max-width: 360px;
+        max-height: 84px;
+        
+    
         font-family: 'Roboto';
+        font-style: normal;
         font-weight: 900;
         font-size: 26px;
         line-height: 1.6;
     
+        text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
     
@@ -34,30 +50,33 @@
     }
 }
 .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     text-align: center;
-    /* outline: 5px solid red; */
+    min-height: 400px;
+    // /* outline: 5px solid red; */
 
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc), url("../images/overlay.jpg");
-    max-width: 1600px;
-    height: 600px;
-    // margin: 0 auto;
-    padding: 200px 0;
+    // background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc), url("../images/overlay.jpg");
+    // max-width: 1600px;
+    // height: 600px;
+    margin: 0 auto;
+    // padding: 200px 0;
+    background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc), url("../../images/header-overlay-phone.jpg");
     background-color: $footer-hero-bgc;
-
-    // @include media()
-    @media screen and (min-width:320px) {
-        max-width: 480px;
+    @include phone{
+        max-width: 100%;
         height: 400px;
-        display: flex;
-        align-items: center;
-        width: 100%;
+        background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc), url("../../images/header-overlay-phone.jpg");
+        background-size: contain;
+        background-position: center;
+        overflow: hidden;
 
-        background-repeat: no-repeat;
-        background-size: auto;
-        
-        background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc), url("../images/overlay.jpg");
+
+                
     }
 }
 .hero__button--secondary {
@@ -78,4 +97,8 @@
     height: 50px;
     left: 692px;
     top: 430px; */
+    @include phone{
+        width: 200px;
+        height: 50px;
+    }
 }

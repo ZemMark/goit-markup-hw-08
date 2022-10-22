@@ -87,11 +87,13 @@ a {
   cursor: pointer;
 }
 
-.header-portfolio {
-  border-bottom: 1px solid #ECECEC;
+@media screen and (min-width: 480px) {
+  .header {
+    width: 100%;
+  }
 }
 
-.header__logo {
+.logo {
   display: block;
   font-family: Raleway;
   font-size: 26px;
@@ -100,6 +102,18 @@ a {
   letter-spacing: 0.03em;
   text-align: left;
   text-decoration: none;
+}
+@media screen and (min-width: 480px) {
+  .logo {
+    font-size: 24px;
+  }
+}
+
+.header-portfolio {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header__logo {
   color: var(--second-half-logo);
   padding-top: 24px;
   padding-bottom: 25px;
@@ -116,7 +130,7 @@ a {
   padding-bottom: 0px;
   margin-left: auto;
 }
-@media screen and (min-width: 320px) and (max-width: 786px) {
+@media screen and (max-width: 768px) {
   .header-contacts {
     display: none;
   }
@@ -169,11 +183,6 @@ a {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 320px) and (max-width: 786px) {
-  .nav {
-    max-width: 100%;
-  }
-}
 
 .nav-links {
   padding-bottom: 0px;
@@ -190,34 +199,25 @@ a {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-.nav-links__item {
-  position: relative;
-}
-@media screen and (min-width: 320px) and (max-width: 786px) {
-  .nav-links__item {
+@media screen and (max-width: 768px) {
+  .nav-links {
     display: none;
   }
+}
+
+.nav-links__item--current {
+  position: relative;
 }
 
 .nav-links__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-links__link.nav-links__item--current {
-  color: #2196F3;
-}
-
 .nav-links__item--current::after {
   content: "";
   position: absolute;
   bottom: 0;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  left: 0;
   width: 100%;
   border-bottom: 4px solid #2196F3;
   border-radius: 2px;
@@ -260,11 +260,6 @@ a {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-@media screen and (min-width: 320px) {
-  .section {
-    min-width: 320px;
-  }
-}
 
 .set-container {
   margin: 0;
@@ -278,23 +273,14 @@ a {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  /* outline: 2px sloid red; */
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .container {
-    min-width: 320px;
+    width: 480px;
   }
 }
 
 .footer__logo {
-  display: block;
-  font-family: Raleway;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-align: left;
-  text-decoration: none;
   display: block;
   margin-bottom: 20px;
   color: #ffffff;
@@ -533,42 +519,26 @@ a {
   letter-spacing: 0.06em;
 }
 
-.hero > h1 {
-  color: #fff;
-  width: 696px;
-  text-transform: uppercase;
-}
-@media screen and (min-width: 320px) {
-  .hero > h1 {
-    min-width: 320px;
-  }
-}
-
 .hero .hero-title {
   letter-spacing: 0.06em;
   margin: 0 auto;
   color: #fff;
-  width: 696px;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 24px;
   margin-bottom: 30px;
   line-height: 1.36;
   text-transform: uppercase;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .hero .hero-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 360px;
-    height: 84px;
+    max-width: 360px;
+    max-height: 84px;
     font-family: "Roboto";
+    font-style: normal;
     font-weight: 900;
     font-size: 26px;
     line-height: 1.6;
+    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -576,32 +546,33 @@ a {
 }
 
 .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  /* outline: 5px solid red; */
+  min-height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/overlay.jpg");
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/overlay.jpg");
-  max-width: 1600px;
-  height: 600px;
-  padding: 200px 0;
+  margin: 0 auto;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/header-overlay-phone.jpg");
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/header-overlay-phone.jpg");
   background-color: #2F303A;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .hero {
-    max-width: 480px;
+    max-width: 100%;
     height: 400px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/overlay.jpg");
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/overlay.jpg");
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/header-overlay-phone.jpg");
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/header-overlay-phone.jpg");
+    background-size: contain;
+    background-position: center;
+    overflow: hidden;
   }
 }
 
@@ -622,6 +593,12 @@ a {
   left: 692px;
   top: 430px; */
 }
+@media screen and (min-width: 480px) {
+  .hero__button--secondary {
+    width: 200px;
+    height: 50px;
+  }
+}
 
 .features__subtitle {
   color: #757575;
@@ -632,32 +609,34 @@ a {
   margin: 0px 0px;
   letter-spacing: 0.03em;
 }
+@media screen and (min-width: 480px) {
+  .features__subtitle {
+    width: 480px;
+  }
+}
 
 .features__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 14px;
   line-height: 1.14;
   /* padding-top: 92px; */
   margin-bottom: 10px;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 480px) {
   .features__title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    max-width: 450px;
-  }
-}
-
-.pictures-list__item {
-  width: 270px;
-}
-@media screen and (min-width: 320px) {
-  .pictures-list__item {
     width: 100%;
-    max-width: 450px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
   }
 }
 
@@ -671,6 +650,11 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70px;
+}
+@media screen and (min-width: 480px) {
+  .pictures-list__item::before {
+    width: 100%;
+  }
 }
 
 .weather-radar::before {
@@ -690,18 +674,13 @@ a {
 }
 
 .pictures-list__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .team {
   background-color: #F5F4FA;
   /* HELP!!!!!!!! Я НЕ РОЗУМІЮ ЧОГО НЕ ПЕРЕЗАПИСУЄТЬСЯ КОЛІР ДЛЯ ЦІЄЇ СЕКЦІЇ, А НАСТЛІДУЄЬБСЯ З body. у тегу 
   .team.bgc специфічність 20, а body - 1 */
-}
-@media screen and (min-width: 320px) and (max-width: 786px) {
-  .team {
-    width: 100%;
-  }
 }
 
 .team-members {
@@ -715,16 +694,14 @@ a {
 
 .team-members__worker {
   background: #FFFFFF;
-  min-width: 270px;
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-@media screen and (min-width: 320px) and (max-width: 786px) {
+@media screen and (min-width: 480px) {
   .team-members__worker {
     max-width: 450px;
-    max-height: 622px;
-    margin: 0 auto;
+    height: 622px;
   }
 }
 
@@ -748,8 +725,8 @@ a {
   text-align: center;
 }
 
-img {
-  width: 100%;
+.card-photo__photo {
+  width: 450px;
 }
 
 .card-button > li + li {
@@ -805,7 +782,7 @@ img {
   padding-top: 0;
   padding-bottom: 94px;
 }
-@media screen and (min-width: 320px) and (max-width: 786px) {
+@media screen and (max-width: 768px) {
   .section-work {
     display: none;
   }
@@ -846,20 +823,30 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.clients {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-preferred-size: calc((100% - 60px) / 2);
-      flex-basis: calc((100% - 60px) / 2);
+@media screen and (min-width: 480px) {
+  .clients {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+  }
 }
 .clients__image {
   color: currentColor;
   width: 170px;
   height: 92px;
+}
+@media screen and (min-width: 480px) {
+  .clients__image {
+    max-width: 210;
+    max-height: 92px;
+  }
 }
 .clients__link {
   display: -webkit-box;
@@ -868,8 +855,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
-  height: 92px;
   fill: #AFB1B8;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -880,13 +865,24 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 480px) {
+  .clients__link {
+    max-width: 210;
+    max-height: 92px;
+  }
+}
 .clients__link:hover, .clients__link:active, .clients__link:focus {
   fill: #2196F3;
   border-color: #2196F3;
 }
 
-.clients > li:not(:last-child) {
-  margin-right: 30px;
+.clients__item {
+  margin: 15px;
+}
+@media screen and (min-width: 480px) {
+  .clients__item {
+    margin: 15px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -1284,9 +1280,9 @@ img {
   padding-left: 24px;
 }
 
-.portfolio__card-link:hover .thumb__overlay,
-.portfolio__card-link:active .thumb__overlay,
-.portfolio__card-link:focus .thumb__overlay {
+.portfolio__card-link:hover .thumb__overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }/*# sourceMappingURL=main.css.map */

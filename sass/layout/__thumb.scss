@@ -26,9 +26,7 @@
     padding-left: 24px;
 }
 
-.portfolio__card-link:hover .thumb__overlay,
-.portfolio__card-link:active .thumb__overlay,
-.portfolio__card-link:focus .thumb__overlay {
+.portfolio__card-link:hover .thumb__overlay {
     transform: translateY(0);
-    
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
