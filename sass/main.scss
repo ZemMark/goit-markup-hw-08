@@ -1,6 +1,5 @@
 @import "./utils/variables";
 @import './utils/visually-hidden';
-@import './utils/multi-block';
 @import './utils/media';
 @import "./base/reset";
 @import "./base/common";
@@ -9,7 +8,6 @@
 @import "./components/nav";
 @import './components/section__title';
 @import './components/section';
-@import './components/set-container';
 @import './components/container';
 @import './components/footer';
 @import './components/address';

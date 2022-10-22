@@ -13,15 +13,6 @@
   margin: -1px;
 }
 
-.multi-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -261,13 +252,6 @@ a {
   padding-bottom: 94px;
 }
 
-.set-container {
-  margin: 0;
-  padding: 0;
-  max-width: 210px;
-  margin-right: auto;
-}
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -289,22 +273,68 @@ a {
   color: #2196F3;
 }
 
+.footer__set-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .footer__set-container {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__set-container {
+    margin-bottom: 60px;
+  }
+}
+
 .footer {
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 480px) {
+  .footer__multi-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .footer-form {
-  margin-left: auto;
+  width: 100%;
 }
 .footer-form__container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .footer-form__input {
-  width: 358px;
+  width: 295px;
   height: 50px;
   color: rgba(255, 255, 255, 0.3);
   background-color: rgba(47, 48, 58, 0.4);
@@ -314,8 +344,14 @@ a {
   border-radius: 4px;
   outline: none;
   padding-left: 16px;
+  margin-bottom: 20px;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0.84, 0.44, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0.84, 0.44, 1);
+}
+@media screen and (min-width: 480px) {
+  .footer-form__input {
+    width: 450px;
+  }
 }
 .footer-form__input:hover, .footer-form__input:active, .footer-form__input:focus {
   border: 1px solid #2196F3;
@@ -344,6 +380,12 @@ a {
   line-height: 1.8;
   letter-spacing: 0.03em;
 }
+@media screen and (min-width: 480px) {
+  .footer-form__button-subscribe {
+    max-width: 200px;
+    max-height: 50px;
+  }
+}
 .footer-form__button-subscribe::after {
   content: "";
   width: 24px;
@@ -360,7 +402,19 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+  text-align: center;
   color: #FFFFFF;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-socials__container {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer-socials__container {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-socials__button {
@@ -411,9 +465,7 @@ a {
 
 .address {
   font-style: normal;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  text-align: center;
 }
 
 .address-links__contact {
@@ -433,10 +485,14 @@ a {
 }
 
 .address-links__item {
-  margin-top: 9px;
   margin-bottom: 0;
   margin-right: 0;
   margin-left: 0;
+}
+@media screen and (min-width: 480px) {
+  .address-links__item {
+    margin-top: 9px;
+  }
 }
 
 .footer-socails__heading {
@@ -448,6 +504,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+  text-align: center;
   color: #FFFFFF;
 }
 
@@ -455,6 +512,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer-socials > li + li {

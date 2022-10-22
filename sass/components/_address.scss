@@ -18,7 +18,9 @@
 
 .address {
     font-style: normal;
-    display: flex;
+    // display: flex;
+    text-align: center;
+
 }
 
 .address-links__contact {
@@ -42,7 +44,10 @@
 }
 
 .address-links__item {
-    margin-top: 9px;
+    @include phone{
+
+        margin-top: 9px;
+    }
     margin-bottom: 0;
     margin-right: 0;
     margin-left: 0;

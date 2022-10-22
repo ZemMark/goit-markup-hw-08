@@ -9,22 +9,49 @@
 
     }
 }
+.footer__set-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @include phone{
+        margin-bottom: 60px;
+    }
+    @media screen and (max-width: 480px) {
+        margin-bottom: 60px;
+    }
+}
 
 .footer {
+    
     background-color: $footer-hero-bgc;
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.footer__multi-block{
+    @include phone{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}
+
 
 .footer-form {
-    margin-left: auto;
+    width: 100%;
+    // margin-left: auto;
 
     &__container {
+        width: 100%;
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     &__input {
+
     
-        width: 358px;
+        width:295px;
         height: 50px;
         color: $non-active-form-color;
         background-color: $overlay-bgc;
@@ -34,7 +61,11 @@
         outline: none;
 
         padding-left: 16px;
+        margin-bottom: 20px;
         transition: border-color 250ms cubic-bezier(0.4, 0.84, 0.44, 1);
+        @include phone{
+            width: 450px;
+        }
     
         &:hover,
         &:active,
@@ -61,6 +92,10 @@
         font-size: 16px;
         line-height: 1.8;
         letter-spacing: 0.03em;
+        @include phone{
+            max-width: 200px;
+            max-height: 50px;
+        }
     
         &::after {
             content: '';
@@ -80,12 +115,20 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin-bottom: 20px;
+        text-align: center;
     
         color: #FFFFFF;
     }
     
 }
-
+.footer-socials__container{
+    @include phone{
+        margin-bottom: 60px;
+    }
+    @media screen and (max-width: 480px) {
+        margin-bottom: 60px;
+    }
+}
 
 
 .footer-socials__button {
