@@ -782,6 +782,11 @@ a {
   }
 }
 
+.section-features {
+  margin-top: 60px;
+  padding-bottom: 94px;
+}
+
 .features__subtitle {
   color: #757575;
   font-weight: 400;
@@ -796,6 +801,16 @@ a {
     width: 480px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1169px) {
+  .features__subtitle {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1170px) and (max-width: 1600px) {
+  .features__subtitle {
+    width: 270px;
+  }
+}
 
 .features__title {
   display: -webkit-box;
@@ -806,19 +821,49 @@ a {
           justify-content: center;
   font-size: 14px;
   line-height: 1.14;
-  /* padding-top: 92px; */
+  text-transform: uppercase;
   margin-bottom: 10px;
+  color: #212121;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  font-weight: 700;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .features__title {
-    width: 100%;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
     text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #212121;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1169px) {
+  .features__title {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1169px) {
+  .features__pictures-list {
+    margin: -60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1170px) and (max-width: 1600px) {
+  .features__pictures-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1169px) {
+  .pictures-list__item {
+    width: 354px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 
@@ -836,6 +881,11 @@ a {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .pictures-list__item::before {
     width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1169px) {
+  .pictures-list__item::before {
+    width: 354px;
   }
 }
 
