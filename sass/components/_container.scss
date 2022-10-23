@@ -7,4 +7,11 @@
     @include phone{
         width: 480px;
     }
+    @include tablet{
+        width: 768px;
+    }
+    @include desktop{
+        width: 1170px;
+    }
+
 }

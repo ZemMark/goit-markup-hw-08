@@ -9,7 +9,7 @@
     align-items: center;
     margin-top: 0;
     margin-bottom: 0;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         display: none;
         }
 
@@ -20,6 +20,11 @@
 }
 .nav-links__item:not(:last-child) {
     margin-right: 50px;
+    
+    @include tablet{
+        margin-right: 53px;
+        
+    }
 }
 .nav-links__item--current::after {
     content: "";

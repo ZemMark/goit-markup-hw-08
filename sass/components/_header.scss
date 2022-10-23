@@ -1,8 +1,8 @@
-.header{
-    @include phone{
-        width:100%;
-    }
-}
+
+    
+    
+
+
 .logo {
     display: block;
     font-family: Raleway;
@@ -15,6 +15,10 @@
     @include phone {
         font-size: 24px;
     }
+    @include tablet{
+        font-size: 26px;
+    }
+    
     
 }
 .header-portfolio {
@@ -24,13 +28,29 @@
 
 .header__logo {
     color: var(--second-half-logo);
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 93px;
+    
 
     &--blue{
         color: $accent-color;
     }
+    @include phone{
+        
+    
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin-right: auto;
+    }
+    @include tablet{
+        padding-top: 26px;
+        padding-bottom: 26px;
+        margin-right: auto;
+    }
+    @include desktop{
+        padding-top: 24px;
+        padding-bottom: 25px;
+        margin-right: auto;
+    }
+
 
 }
 
