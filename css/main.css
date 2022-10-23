@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -839,9 +838,13 @@ a {
   }
 }
 
+.features__pictures-list {
+  padding: 0;
+}
 @media screen and (min-width: 768px) and (max-width: 1169px) {
   .features__pictures-list {
-    margin: -60px;
+    margin-left: -15px;
+    margin-right: -15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -856,12 +859,21 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-left: -60px;
+    margin-right: -60px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1169px) {
   .pictures-list__item {
     width: 354px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 1170px) and (max-width: 1600px) {
+  .pictures-list__item {
+    width: 270px;
     margin-left: 15px;
     margin-right: 15px;
   }
@@ -911,17 +923,35 @@ a {
 
 .team {
   background-color: #F5F4FA;
-  /* HELP!!!!!!!! Я НЕ РОЗУМІЮ ЧОГО НЕ ПЕРЕЗАПИСУЄТЬСЯ КОЛІР ДЛЯ ЦІЄЇ СЕКЦІЇ, А НАСТЛІДУЄЬБСЯ З body. у тегу 
-  .team.bgc специфічність 20, а body - 1 */
 }
 
 .team-members {
   margin: 0;
   padding: 0;
 }
+@media screen and (min-width: 768px) and (max-width: 1169px) {
+  .team-members {
+    margin-left: -15px;
+    margin-right: -15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
 
-.team-members__worker:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .team-members__worker:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1169px) {
+  .team-members__worker:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .team-members__worker {
@@ -934,6 +964,13 @@ a {
   .team-members__worker {
     max-width: 450px;
     height: 622px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1169px) {
+  .team-members__worker {
+    max-width: 354px;
+    height: 536px;
+    margin: 15px;
   }
 }
 
@@ -1014,7 +1051,7 @@ a {
   padding-top: 0;
   padding-bottom: 94px;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1170px) {
   .section-work {
     display: none;
   }

@@ -1,9 +1,6 @@
 .team {
     background-color: $bgc-secondary;
-
-
-    /* HELP!!!!!!!! Я НЕ РОЗУМІЮ ЧОГО НЕ ПЕРЕЗАПИСУЄТЬСЯ КОЛІР ДЛЯ ЦІЄЇ СЕКЦІЇ, А НАСТЛІДУЄЬБСЯ З body. у тегу 
-  .team.bgc специфічність 20, а body - 1 */
+    
 
 }
 
@@ -11,9 +8,23 @@
     // display: flex;
     margin: 0;
     padding: 0;
+    @include tablet {
+        margin-left: -15px;
+        margin-right: -15px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: calc((100% - 2 * 15px)/2);
+    }
+    
 }
 .team-members__worker:not(:last-child) {
-    margin-bottom: 30px;
+    @include phone{
+        margin-bottom: 30px;
+    }
+    @include tablet{
+        margin-bottom: 30px;
+    }
+
 }
 .team-members__worker {
     background: #FFFFFF;
@@ -25,6 +36,12 @@
         max-width: 450px;
         height: 622px;
     }
+    @include tablet {
+        max-width: 354px;
+        height: 536px;
+        margin: 15px;
+    }
+
 }
 
 .team-card {
