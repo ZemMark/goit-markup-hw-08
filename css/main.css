@@ -888,6 +888,7 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: -30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -899,12 +900,12 @@ a {
 }
 .clients__image {
   color: currentColor;
-  width: 170px;
+  min-width: 170px;
   height: 92px;
 }
 @media screen and (min-width: 480px) {
   .clients__image {
-    max-width: 210;
+    max-width: 210px;
     max-height: 92px;
   }
 }
@@ -927,7 +928,7 @@ a {
 }
 @media screen and (min-width: 480px) {
   .clients__link {
-    max-width: 210;
+    max-width: 210px;
     max-height: 92px;
   }
 }

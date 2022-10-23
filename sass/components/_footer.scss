@@ -66,6 +66,10 @@
         @include phone{
             width: 450px;
         }
+        // @media screen and (max-width: 480px) {
+        //     max-width: 210px;
+        //     max-height: 92px;
+        // }
     
         &:hover,
         &:active,

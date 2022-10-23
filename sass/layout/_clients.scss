@@ -1,6 +1,7 @@
 .clients {
     @include phone {
         justify-content: center;
+        margin: -30px;
         
         display: flex;
         flex-wrap: wrap;
@@ -13,12 +14,13 @@
 
     &__image{
         color: currentColor;
-        width: 170px;
+        min-width: 170px;
         height: 92px;
         @include phone {
-            max-width: 210;
+            max-width: 210px;
             max-height: 92px;
         }
+        
     }
 
     &__link{
@@ -36,9 +38,10 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         @include phone{
-            max-width: 210;
+            max-width: 210px;
             max-height: 92px;
         }
+    
     }
     &__link:hover,
     &__link:active,
