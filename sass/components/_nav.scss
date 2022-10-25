@@ -1,5 +1,6 @@
 .nav {
     display: flex;
+    justify-content: space-between;
 }    
 .nav-links {
     padding-bottom: 0px;
@@ -9,7 +10,7 @@
     align-items: center;
     margin-top: 0;
     margin-bottom: 0;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
         display: none;
         }
 
@@ -63,6 +64,26 @@
         color: $accent-color;
     }    
 }    
+
+.nav-menu__button{
+    display: inline-flex;
+    border: none;
+    background-color: #fff;
+    @media screen and (min-width: 768px){
+        display: none;
+        
+    }
+
+}
+.nav-menu__icon-menu{
+    display: none;
+}
+.nav-menu__link{
+    display: flex;
+    align-items: center;
+    // margin-left: auto;
+}
+
 
 
 

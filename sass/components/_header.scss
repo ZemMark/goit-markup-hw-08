@@ -18,6 +18,9 @@
     @include tablet{
         font-size: 26px;
     }
+    @include desktop {
+        font-size: 26px;
+    }
     
     
 }

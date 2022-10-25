@@ -1,5 +1,5 @@
 .section-features{
-    margin-top: 60px;
+    padding-top: 60px;
     padding-bottom: 94px;
 }
 .features__subtitle {
@@ -38,7 +38,6 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
     font-weight: 700;
-    // width: 100%;
     @include phone{
         text-align: center;
         
@@ -63,8 +62,10 @@
     }
     @include desktop{
         display: flex;
-        margin-left: -60px;
-        margin-right: -60px;
+        margin-left: -15px;
+
+        // margin-left: -60px;
+        // margin-right: -60px;
         
     }
 }
@@ -124,6 +125,6 @@
 
 
 
-.pictures-list__item:not(:last-child) {
-    margin-bottom: 30px;
-}
+// .pictures-list__item:not(:last-child) {
+//     margin-bottom: 30px;
+// }

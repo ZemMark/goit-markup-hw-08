@@ -50,7 +50,7 @@
         color: #FFFFFF;
     }
     @include desktop{
-        width: 696px;
+        min-width: 696px;
         max-height: 120px;
     
         font-size: 44px;
