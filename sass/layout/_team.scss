@@ -31,7 +31,10 @@
     
 }
 .team-members__worker:not(:last-child) {
-    @media screen and (min-width:480px) and (max-width:768px) {
+    @media screen and (max-width: 480px) {
+        margin-bottom: 30px;
+    }
+    @include phone {
         margin-bottom: 30px;
     }
     
@@ -46,6 +49,7 @@
     
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
     @include phone {
         max-width: 450px;
         height: 622px;

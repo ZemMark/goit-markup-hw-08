@@ -1069,7 +1069,12 @@ header {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 480px) {
+  .team-members__worker:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 480px) {
   .team-members__worker:not(:last-child) {
     margin-bottom: 30px;
   }
