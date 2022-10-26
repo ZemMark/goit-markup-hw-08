@@ -5,6 +5,9 @@ body{
     letter-spacing: 0.03em;
     font-size: 14px;
 }
+.body.is-open{
+    overflow: hidden;
+}
 
 .list{
     list-style: none;

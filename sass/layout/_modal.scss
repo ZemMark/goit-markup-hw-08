@@ -8,9 +8,16 @@
 
     border-radius: 4px;
     background-color: #FFFFFF;
-    @include phone{
-        width: 450px;
+    overflow-y: scroll;
+    @media screen and (max-width: 480px) {
+        
+        max-width:320px;
         height: 609px;
+        width: 100%;        
+    }
+    @media screen and (min-width:768px) and (max-width: 1169px) {
+        
+        width: 450px;
     }
     &__button-close {
         position: absolute;
