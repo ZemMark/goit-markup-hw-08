@@ -1,5 +1,8 @@
 
-    
+header{
+    position: relative;
+}
+
     
 
 
@@ -12,8 +15,14 @@
     letter-spacing: 0.03em;
     text-align: left;
     text-decoration: none;
+    @media screen and (max-width: 480px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
     @include phone {
         font-size: 24px;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
     @include tablet{
         font-size: 26px;
@@ -46,16 +55,19 @@
     @include tablet{
         padding-top: 26px;
         padding-bottom: 26px;
-        margin-right: auto;
+        margin-right: 88px;
     }
     @include desktop{
         padding-top: 24px;
         padding-bottom: 25px;
-        margin-right: auto;
+        margin-right: 93px;
     }
 
 
 }
 
 
+.mobile-menu__button .button-menu__icon-cross{
+    display: none;
+}
 

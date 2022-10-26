@@ -13,6 +13,7 @@
         display: block;
         padding-top: 21px;
         padding-bottom: 21px;
+        
 
         &:not(:last-child){
             margin-bottom: 10px;
@@ -20,18 +21,23 @@
     }
     @include desktop{
         display: flex;
+        padding: 0;
         
     }
 
 }
-.header-contacts:first-child{
+.header-contacts__contact-mail{
+    @media screen and (min-width: 768px) and (max-width: 1169px){
+        margin-bottom: 10px;
+    }
     @include desktop{
         margin-right: 30px;
     }
 }
 
 
-.header-contacts__contact {
+.header-contacts__contact-phone,
+.header-contacts__contact-mail {
     display: block;
 
     font-weight: 500;

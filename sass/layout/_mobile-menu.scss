@@ -1,0 +1,121 @@
+.mobile-menu{
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 48px;
+    padding-left: 40px;
+    padding-bottom: 48px;
+    
+    display: none;
+    position: absolute;
+    height: 796px;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    &.is-open{
+        display: flex;
+    }
+}
+
+.mobile-menu__nav-links{
+    display: flex;
+    flex-direction: column;
+
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    text-align: left;
+    list-style: none;
+}
+.nav-linksi-list__item:not(:last-child){
+    margin-bottom: 35px;
+}
+.mobile-menu__contacts-item:not(:last-child){
+    margin-bottom: 32px;
+
+}
+.mobile-menu__nav-link{
+    color: $title-color;
+    &:hover,
+    &:active,
+    &:focus{
+        color: $accent-color;
+    }
+}
+.mobile-menu__contacts{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+    
+}
+.mobile-menu__contact-phone{
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    &:hover,
+        &:active,
+        &:focus {
+            color: $accent-color;
+        }
+}
+.mobile-menu__contact-mail{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+
+    color: $primary-text-color;
+    &:hover,
+        &:active,
+        &:focus {
+            color: $accent-color;
+        }
+}
+
+.mobile-menu__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.mobile-menu__nav-link--current{
+    color: $accent-color;
+}
+
+.mobile-menu__button {
+    border: none;
+    background-color: #fff;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+.mobile-menu__button--close{
+    position: absolute;
+    top: 21px;
+    right: 25.33px;
+    border: none;
+    background-color: #fff;
+}
+.mobile-menu__social-links{
+    display: flex;
+}
+.social-links__item:not(:last-child){
+    margin-right: 10px;
+}
+.social-links__item:not(:last-child)::after{
+    content: "";
+    border-right: 2px solid $menu-affter-color;
+
+}
+.social-links__link{
+    color: $accent-color;
+    padding-right: 10px;
+}

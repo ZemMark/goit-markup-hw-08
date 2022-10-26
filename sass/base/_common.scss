@@ -17,6 +17,7 @@ body{
 }
 .flex-container {
     display: flex;
+    justify-content: space-between;
 }
 button{
     cursor: pointer;
@@ -25,4 +26,5 @@ button{
 a {
     
     cursor: pointer;
+    text-decoration: inherit;
 }
