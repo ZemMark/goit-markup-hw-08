@@ -1346,6 +1346,12 @@ header {
   border-radius: 4px;
   background-color: #FFFFFF;
 }
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
 .modal__button-close {
   position: absolute;
   display: -webkit-box;
@@ -1479,6 +1485,11 @@ header {
   padding: 12px 15px;
   outline: transparent;
 }
+@media screen and (min-width: 480px) {
+  .modal__comment {
+    max-width: 370px;
+  }
+}
 .modal__comment:hover, .modal__comment:active, .modal__comment:focus {
   border-color: #2196F3;
 }
@@ -1513,6 +1524,11 @@ header {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 480px) {
+  .modal__checkbox-label {
+    font-size: 12px;
+  }
 }
 
 .modal__privasy-agreemant {
@@ -1738,6 +1754,7 @@ header {
   width: 100%;
   left: 0;
   background-color: #fff;
+  overflow-y: scroll;
 }
 .mobile-menu.is-open {
   display: -webkit-box;
