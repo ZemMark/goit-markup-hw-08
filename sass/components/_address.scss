@@ -44,7 +44,9 @@
 }
 
 .address-links__item {
-    @include phone{
+    @media screen and (max-width: 767px) {
+        
+    
 
         margin-top: 9px;
     }

@@ -1,12 +1,16 @@
 .clients {
     @include phone {
         justify-content: center;
-        margin: -30px;
+        margin-right: -30px;
+        margin-left: -30px;
         
         display: flex;
         flex-wrap: wrap;
         flex-basis: calc((100% - 2*30px)/2);
     } 
+    @include tablet{
+        margin-top: -15px;
+    }
     @include desktop {
         display: flex;
 
@@ -17,14 +21,13 @@
 
 
     &__image{
-        
+
+        height: 92px;
         @include phone {
             max-width: 210px;
-            max-height: 92px;
         }
         @include desktop {
             max-width: 170px;
-            max-height: 92px;
         }
         
     }
@@ -45,7 +48,6 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         @include phone{
             max-width: 210px;
-            max-height: 92px;
         }
     
     }
@@ -57,15 +59,16 @@
     }
 
 }
+
 .clients__item{
-    @media screen and (max-width:480px) {
-        margin: 15px;
+    height: 92px;
+    margin: 15px;
+    @media screen and (max-width:767px) {
+        margin-top: 0;
+        margin-bottom: 30px;
+
     }
-    @media screen and (max-width: 768px)  and (max-width: 1170px) {
-        
-        margin: 15px;
-    }
-    @media screen and (max-width: 1170px) {
+    @media screen and (min-width: 1170px) {
         
         margin: 15px;
     }

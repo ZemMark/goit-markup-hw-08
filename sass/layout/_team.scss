@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     @include tablet {
+        margin-top: -15px;
         margin-left: -15px;
         margin-right: -15px;
         display: flex;

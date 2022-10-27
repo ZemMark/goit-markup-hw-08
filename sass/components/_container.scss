@@ -1,8 +1,7 @@
 .container {
     // width: 1200px;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
     
@@ -14,7 +13,7 @@
     }
     @include desktop{
         
-        width: 1170px;
+        width: 1200px;
     }
 
 }

@@ -65,9 +65,9 @@
 
     &__container {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
 
         @include desktop{
             display: flex;
@@ -77,9 +77,8 @@
         }
     }
     &__input {
-
     
-        width:295px;
+        width:100%;
         height: 50px;
         color: $non-active-form-color;
         background-color: $overlay-bgc;
@@ -109,14 +108,11 @@
         }
     }
     &__button-subscribe {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: block;
         position: relative;
         height: 50px;
         width: 200px;
-        margin-left: 12px;
-    
+        margin: 0 auto;
         background-color: $accent-color;
         border-radius: 4px;
         color: #FFFFFF;

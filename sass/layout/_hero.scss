@@ -1,25 +1,3 @@
-// .hero>h1 {
-//     color: #fff;
-//     text-transform: uppercase;
-//     @include phone{
-//         max-width: 360px;
-//         // height: 84px;
-        
-    
-//         // font-family: 'Roboto';
-//         // font-style: normal;
-//         font-weight: 900;
-//         font-size: 26px;
-//         line-height: 1.6;
-    
-//         text-align: center;
-//         letter-spacing: 0.06em;
-//         text-transform: uppercase;
-    
-//         color: #FFFFFF;
-
-//     }
-// }
 .hero .hero-title {
     letter-spacing: 0.06em;
     margin: 0 auto;
@@ -61,12 +39,9 @@
 
 }
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    padding: 118px 0px;
     text-align: center;
-    min-height: 400px;
+    height: 400px;
     // /* outline: 5px solid red; */
 
     background-repeat: no-repeat;
@@ -78,6 +53,13 @@
     // padding: 200px 0;
     background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc), url("../images/header-overlay-phone.jpg");
     background-color: $footer-hero-bgc;
+    @media screen and (max-width: 479px) {
+        @media screen and (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc) url('../../images/header-mobile-overlay-2x.jpg');
+            }
+    }
     @include phone{
         max-width: 480px;
         height: 400px;
@@ -85,6 +67,12 @@
         background-size: contain;
         background-position: center;
         overflow: hidden;
+        
+        @media screen and (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc) url('../../images/header-mobile-overlay-2x.jpg');
+            }
     }
     @include tablet{
         max-width: 768px;
@@ -93,6 +81,11 @@
         background-size: contain;
         background-position: center;
         overflow: hidden;
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc) url('../../images/header-overlay-tablet-2x.jpg');
+        }
     }
     @include desktop{
         max-width: 1600px;
@@ -100,7 +93,13 @@
         background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc), url("../../images/overlay.jpg");
         background-size: cover;
         overflow: hidden;
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc) url("../../images/header-overlay-desktop-2x.jpg");
+        }
     }
+    
 }
 .hero__button--secondary {
     padding: 10px 32px;
