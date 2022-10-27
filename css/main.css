@@ -1366,8 +1366,6 @@ header {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1388,6 +1386,13 @@ header {
   .modal {
     width: 450px;
     height: 609px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1169px) {
