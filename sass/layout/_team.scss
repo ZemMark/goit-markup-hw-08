@@ -9,15 +9,12 @@
     margin: 0;
     padding: 0;
     @include tablet {
-        margin-top: -15px;
-        margin-left: -15px;
-        margin-right: -15px;
+        gap: 30px;
         display: flex;
         
     }
     @media  screen and (min-width: 768px) and (max-width:1170px){
         flex-wrap: wrap;
-        flex-basis: calc((100% - 2 * 15px)/2);
     }
     @include desktop {
         display: flex;
@@ -35,10 +32,6 @@
     @media screen and (max-width: 480px) {
         margin-bottom: 30px;
     }
-    @include phone {
-        margin-bottom: 30px;
-    }
-    
     @include desktop{
         margin-right: 30px;
     }
@@ -52,21 +45,17 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
     @include phone {
-        max-width: 450px;
-        height: 622px;
+        width: 450px;
     }
     @include tablet {
-        max-width: 354px;
-        height: 536px;
+        width: 354px;
         
     }
-    @media screen and (min-width:768px) and (max-width: 1170px) {
-        margin: 15px;
-    }
+    // @media screen and (min-width:768px) and (max-width: 1170px) {
+    //     margin: 15px;
+    // }
     @include desktop {
-        max-width: 270px;
-        height: 428px;
-        margin-right: -15px;
+        width: 270px;
     }
 
 }
@@ -93,9 +82,9 @@
 
 
 }
-.card-photo__photo{
-    width: 450px;
-}
+// .card-photo__photo{
+//     width: 450px;
+// }
 
 // .team-card__heading {
 //     margin-bottom: 10px;

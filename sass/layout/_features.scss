@@ -1,7 +1,11 @@
 .section-features{
     padding-top: 60px;
     padding-bottom: 94px;
-    
+    @media screen and (max-width: 1169px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        
+    }
 }
 .features__subtitle {
     color: $primary-text-color;
@@ -28,8 +32,6 @@
 
 
 .features__title {
-    display: flex;
-    justify-content: center;
     
     font-size: 14px;
     line-height: 1.14;
@@ -39,8 +41,10 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
     font-weight: 700;
-    @include phone{
-        text-align: center;
+    @media screen and (max-width: 767px) {
+        
+        display: flex;
+        justify-content: center;
         
     }
     @include tablet{
@@ -52,15 +56,18 @@
     }
 
 }
-
+// .pictures-list:not(:last-child){
+//     @media screen and (max-width: 767px) {
+//         margin-bottom: 30px;
+        
+//     }
+// }
 .features__pictures-list {
     padding: 0;
     @include tablet{
-        margin-left: -15px;
-        margin-right: -15px;
+        gap: 30px;
         display: flex;
         flex-wrap: wrap;
-        flex-basis: calc((100% - 2*30px)/2);
         
     }
     @include desktop{
@@ -75,15 +82,14 @@
     }
 }
 
-.pictures-list__item {
+.pictures-list__item:not(:last-child) {
     @media screen and (max-width: 767px) {
         
         margin-bottom: 30px;
     }
     @include tablet{
         width: 354px;
-        margin-left: 15px;
-        margin-right: 15px;
+        
         
     }
     @include desktop{
