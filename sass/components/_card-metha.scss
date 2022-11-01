@@ -1,12 +1,18 @@
 .card-metha {
 
-
+    border: 1px solid #eee;
+    border-top: none;
     
     padding-top: 20px;
-    padding-bottom: 20px;
     padding-right: 24px;
     padding-left: 24px;
-
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        height: 146px;
+        padding-bottom: 56px; 
+    }
+    @media screen and (min-width: 1200px) {
+        height: 110px;
+    }
 }
 .card-metha__subtitle {
     font-size: 16px;
