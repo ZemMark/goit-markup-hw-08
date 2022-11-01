@@ -639,6 +639,7 @@ header {
 }
 
 .footer__plane {
+  display: block;
   width: 24px;
   height: 24px;
 }
@@ -1112,11 +1113,13 @@ header {
 @media screen and (min-width: 480px) {
   .team-members__worker {
     width: 450px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
   .team-members__worker {
     width: 354px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1170px) {
