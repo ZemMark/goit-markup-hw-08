@@ -20,10 +20,23 @@
     line-height: 1.55;
     font-size: 18px;
     letter-spacing: 0.03em;
-    width: 322px;
-    height: 168px;
-    padding-top: 63px;
-    padding-left: 24px;
+    @media screen and (min-width: 768) {
+        width: 306px;
+        height: 168px;
+        padding-top: 49px;
+        padding-left: 24px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 322px;
+        height: 168px;
+        padding-top: 63px;
+        padding-left: 24px;
+        
+    }
+    @media screen and (max-width: 479px) {
+        width: 100%;
+        font-size: 14px;
+    }
 }
 
 .portfolio__card-link:hover .thumb__overlay {

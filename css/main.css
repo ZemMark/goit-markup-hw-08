@@ -753,8 +753,6 @@ header {
 }
 
 .card-metha {
-  border: 1px solid #EEEEEE;
-  border-top: none;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 24px;
@@ -1731,6 +1729,10 @@ header {
   }
 }
 
+.portfolio__item {
+  border: 1px solid #EEEEEE;
+  border-top: none;
+}
 @media screen and (max-width: 479px) {
   .portfolio__item {
     width: 100%;
@@ -1804,10 +1806,28 @@ header {
   line-height: 1.55;
   font-size: 18px;
   letter-spacing: 0.03em;
-  width: 322px;
-  height: 168px;
-  padding-top: 63px;
-  padding-left: 24px;
+}
+@media screen and (min-width: 768) {
+  .thumb__overlay-text {
+    width: 306px;
+    height: 168px;
+    padding-top: 49px;
+    padding-left: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .thumb__overlay-text {
+    width: 322px;
+    height: 168px;
+    padding-top: 63px;
+    padding-left: 24px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .thumb__overlay-text {
+    width: 100%;
+    font-size: 14px;
+  }
 }
 
 .portfolio__card-link:hover .thumb__overlay {

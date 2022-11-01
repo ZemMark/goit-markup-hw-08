@@ -15,6 +15,8 @@
     }
 }
 .portfolio__item {
+    border: 1px solid $portfolio-card-border-color;
+    border-top: none;
     // margin-left: $card-gap;
     // margin-top: $card-gap;
     @media screen and (max-width:479px) {
