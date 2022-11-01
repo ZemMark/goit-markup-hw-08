@@ -1318,7 +1318,6 @@ header {
 @media screen and (max-width: 479px) {
   .clients__item {
     margin-top: 0;
-    width: 50%;
     margin: 0 auto;
   }
 }
