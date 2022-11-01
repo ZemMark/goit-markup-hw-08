@@ -1,5 +1,5 @@
 .clients {
-    gap: 15px;
+    gap: 30px;
     @include phone {
         justify-content: center;
         // margin-right: -30px;
@@ -59,22 +59,25 @@
     }
 
 }
-
+.clients__item:not(:last-child){
+    @media screen and (max-width: 479px) {
+        
+        margin-bottom: 30px;
+    }
+}
 .clients__item{
     height: 92px;
+    width: 170px;
     // margin: 15px;
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:479px) {
         margin-top: 0;
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
+        width: 50%;
+        margin: 0 auto;
+        // flex-basis: calc((100% - 2 * 30px)/2);
 
     }
-    @media screen and (min-width: 1170px) {
-        
-        margin: 15px;
-    }
-    @include desktop{
-        margin-right: 15px;
-    }
+    
 }
 // .clients__link {
 //     display: flex;

@@ -57,7 +57,7 @@
         @media screen and (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc) url('../../images/header-mobile-overlay-2x.jpg');
+                background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc), url('../images/header-mobile-overlay-2x.jpg');
             }
     }
     @include phone{
@@ -71,32 +71,32 @@
         @media screen and (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc) url('../../images/header-mobile-overlay-2x.jpg');
+                background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc), url('../images/header-mobile-overlay-2x.jpg');
             }
     }
     @include tablet{
         max-width: 768px;
         height: 400px;
-        background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc), url("../../images/header-overlay-tablet.jpg");
+        background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc), url("../images/header-overlay-tablet.jpg");
         background-size: contain;
         background-position: center;
         overflow: hidden;
         @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx){
-            background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc) url('../../images/header-overlay-tablet-2x.jpg');
+            background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc), url('../images/header-overlay-tablet-2x.jpg');
         }
     }
     @include desktop{
         max-width: 1600px;
         height: 600px;
-        background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc), url("../../images/overlay.jpg");
+        background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc), url("../images/overlay.jpg");
         background-size: cover;
         overflow: hidden;
         @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc) url("../../images/header-overlay-desktop-2x.jpg");
+            background-image: linear-gradient(to top, $overlay-bgc, $overlay-bgc), url("../images/header-overlay-desktop-2x.jpg");
         }
     }
     

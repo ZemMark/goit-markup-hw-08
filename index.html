@@ -186,11 +186,22 @@
         <h2 class="section-title">Наша команда</h2>
         <ul class="list team-members">
           <li class="team-members__worker">
-            <img
-              srcset="./images/team/designer/designer@1xphone(1).jpg 1x,./images/team/designer/designer@1xTablet (1).jpg 1x,./images/team/designer/designer@1xDesktop (1).jpg 1x,
-              ./images/team/designer/designer@2x450w.jpg 2x, ./images/team/designer/designer350w@2x.jpg 2x, ./images/team/designer/designer270w@2x.jpg 2x"
-              class=" card-photo__photo" src="./images/designer.jpg" alt="Розробник продукту Ігор Дем'яненко"
-              width="270" />
+            <picture>
+              <source
+                srcset="./images/team/designer/designer@1xphone(1).jpg 1x, ./images/team/designer/designer@2x450w.jpg 2x"
+                media="(min-width: 480px">
+              <img src="./images/team/designer/designer@1xphone(1).jpg" alt="Ігор">
+            </picture>
+            <picture>
+              <source
+                srcset="./images/team/designer/designer@1xTablet (1).jpg 1x, ./images/team/designer/designer350w@2x.jpg 2x"
+                media="(min-width: 768px)">
+            </picture>
+            <picture>
+              <source
+                srcset="./images/team/designer/designer@1xDesktop (1).jpg 1x, ./images/team/designer/designer270w@2x.jpg 2x"
+                media="(min-width:1200px)">
+            </picture>
 
             <div class="team-card">
               <h3 class="team-card__heading">Ігор Дем'яненко</h3>
@@ -232,11 +243,20 @@
 
           <li class="team-members__worker">
 
+            <picture>
+              <source srcset="./images/team/repina/repina-270.jpg 1x, ./images/team/repina/repina270@2x.jpg 2x "
+                media="(min-width:1200px)">
+            </picture>
 
-            <img
-              srcset="./images/team/repina/repina@1x450 (1).jpg 1x, ./images/team/repina/repina-450.jpg 2x, ./images/team/repina/repina-350.jpg 2x, ./images/team/repina/repina-270.jpg 2x"
-              class="card-photo__photo" src="./images/developer.jpg" alt="Фронтенд розробник Ольга Рєпіна"
-              width="270" />
+            <picture>
+              <source srcset="./images/team/repina/repina-350.jpg 1x, ./images/team/repina/repina270@2x.jpg 2x "
+                media="(min-width:768px)">
+            </picture>
+            <picture>
+              <source srcset="./images/team/repina/repina@1x450 (1).jpg 1x, ./images/team/repina/repina-450.jpg   2x "
+                media="(min-width:480px)">
+              <img src="./images/team/repina/repina@1x450 (1).jpg" alt="Оля">
+            </picture>
 
 
 
@@ -279,10 +299,22 @@
           </li>
 
           <li class="team-members__worker">
+            <picture>
+              <source srcset="./images/team/tarasov/tarasov-450.jpg 1x, ./images/team/tarasov/tarasov450@2x.jpg 2x "
+                media="(min-width:1200px)">
+            </picture>
 
-            <img
-              srcset="./images/team/tarasov/tarasov-450.jpg 2x,./images/team/tarasov/tarasov-350.jpg 2x,./images/team/tarasov/tarasov-270.jpg 2x"
-              class="card-photo__photo" src="./images/marketing.jpg" alt="Маркетолог Микола Тарасов" width="270" />
+            <picture>
+              <source srcset="./images/team/tarasov/tarasov-350.jpg 1x, ./images/team/tarasov/tarasov350@2x.jpg 2x "
+                media="(min-width:768px)">
+            </picture>
+
+            <picture>
+              <source srcset="./images/team/tarasov/tarasov-270.jpg 1x, ./images/team/tarasov/tarasov270@2x.jpg 2x "
+                media="(min-width:480px)">
+              <img src="./images/team/tarasov/tarasov-450.jpg" alt="">
+            </picture>
+
             <div class="team-card">
               <h3 class="team-card__heading">Микола Тарасов</h3>
               <p class="team-card__job" lang="en">Marketing</p>
@@ -323,10 +355,21 @@
 
           <li class="team-members__worker">
             <div class="card-photo">
-
-              <img
-                srcset="./images/team/jermakov/jermakov-450.jpg 2x,./images/team/jermakov/jermakov-350.jpg 2x,./images/team/jermakov/jermakov-270.jpg 2x"
-                class="card-photo__photo" src="./images/member.jpg" alt="Розробник інтерфейсу" width="270" />
+              <picture>
+                <source srcset="./images/team/jermakov/jermakov-270.jpg 1x,./images/team/jermakov/jermakov270@2x.jpg2x"
+                  media="(min-width: 1200px)">
+              </picture>
+              <picture>
+                <source
+                  srcset="./images/team/jermakov/jermakov-350.jpg 1x, ./images/team/jermakov/jermakov350@2x.jpg 2x"
+                  media="(min-width: 768px)">
+              </picture>
+              <picture>
+                <source
+                  srcset="./images/team/jermakov/jermakov-450.jpg 1x, ./images/team/jermakov/jermakov450@2x.jpg 2x"
+                  media="(min-width: 480px)">
+                <img src="./images/team/jermakov/jermakov-450.jpg" alt="">
+              </picture>
             </div>
             <div class="team-card">
               <h3 class="team-card__heading">Михайло Єрмаков</h3>
@@ -540,12 +583,16 @@
         <label for="email">
           <input class="footer-form__input" type="email" name="email" placeholder="Email" required>
         </label>
-        <button class="footer-form__button-subscribe" type="submit">Підписатися</button>
+        <button class="footer-form__button-subscribe" type="submit">Підписатися
+          <svg width="24" height="24">
+            <use class="footer__plane" href="./images/plane.svg"></use>
+          </svg>
+        </button>
       </div>
     </form>
   </footer>
   <script src="./js/modal.js"></script>
-  <script src="./js/menu.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

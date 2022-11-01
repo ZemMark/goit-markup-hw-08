@@ -1,6 +1,6 @@
 .footer__logo {
     display: block;
-    @media screen and (max-width: 1169px) {
+    @media screen and (max-width: 1199px) {
         padding: 0;
         margin-bottom: 20px;
     }
@@ -35,6 +35,9 @@
     background-color: $footer-hero-bgc;
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 .footer__multi-block{
     
@@ -43,16 +46,17 @@
         justify-content: center;
         flex-direction: column;
     }
-    @include tablet{
+    @media screen and (min-width: 768px) and (max-width: 1199) {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
     }
-    @include desktop{
+    @media screen and (min-width: 1200px) {
+        
+        justify-content: space-around;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
     }
         
     
@@ -133,9 +137,10 @@
     
         &::after {
             content: '';
+            display: flex;
             width: 24px;
             height: 24px;
-            background-image: url('../images/footer/icon-send.svg');
+            background-image: url('../../images/form-icons/symbol-defs#plane.svg#plane');
             margin-left: 12px;
     
         }
@@ -199,6 +204,11 @@
 
 .footer-socials>li+li {
     padding-left: 10px;
+}
+
+.footer__plane{
+    width: 24px;
+    height: 24px;
 }
 
 // .footer-form__container {

@@ -1,20 +1,35 @@
 .portfolio {
-
+    gap: 30px;
     display: flex;
     flex-wrap: wrap;
-    margin-top: calc(-1*$card-gap);
-    margin-left: calc(-1*$card-gap);
+    // margin-top: calc(-1*$card-gap);
+    // margin-left: calc(-1*$card-gap);
 
 }
 
 
 
-
+.portfolio__item:not(:last-child){
+    @media screen and (max-width: 479px) {
+        margin-bottom: 30px;
+    }
+}
 .portfolio__item {
+    // margin-left: $card-gap;
+    // margin-top: $card-gap;
+    @media screen and (max-width:479px) {
+        width: 100%;
+    }
+    @media screen and (min-width:480px) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+        
+        flex-basis: calc(100%/3 - $card-gap);
+    }
 
-    flex-basis: calc(100%/3 - $card-gap);
-    margin-left: $card-gap;
-    margin-top: $card-gap;
 
 }
 

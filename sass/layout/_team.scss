@@ -5,6 +5,7 @@
 }
 
 .team-members {
+    gap: 30px;
     // display: flex;
     margin: 0;
     padding: 0;
@@ -31,9 +32,6 @@
 .team-members__worker:not(:last-child) {
     @media screen and (max-width: 480px) {
         margin-bottom: 30px;
-    }
-    @include desktop{
-        margin-right: 30px;
     }
 
 }
