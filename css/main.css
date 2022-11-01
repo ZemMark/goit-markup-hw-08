@@ -559,7 +559,15 @@ header {
   border: 1px solid #2196F3;
 }
 .footer-form__button-subscribe {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   position: relative;
   height: 50px;
   width: 200px;
@@ -636,12 +644,6 @@ header {
 
 .footer-socials > li + li {
   padding-left: 10px;
-}
-
-.footer__plane {
-  display: block;
-  width: 24px;
-  height: 24px;
 }
 
 .address-links__map {
