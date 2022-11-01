@@ -135,15 +135,14 @@
             max-height: 50px;
         }
     
-        &::after {
-            content: '';
-            display: flex;
-            width: 24px;
-            height: 24px;
-            background-image: url('../../images/form-icons/symbol-defs#plane.svg#plane');
-            margin-left: 12px;
+        // &::after {
+        //     content: '';
+        //     display: flex;
+        //     width: 24px;
+        //     height: 24px;
+        //     margin-left: 12px;
     
-        }
+        // }
         
     }
     &__heading {

@@ -580,16 +580,6 @@ header {
     max-height: 50px;
   }
 }
-.footer-form__button-subscribe::after {
-  content: "";
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 24px;
-  height: 24px;
-  background-image: url("../../images/form-icons/symbol-defs#plane.svg#plane");
-  margin-left: 12px;
-}
 .footer-form__heading {
   font-family: "Roboto";
   font-style: normal;
