@@ -457,11 +457,6 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 480px) {
-  .footer__set-container {
-    margin-bottom: 60px;
-  }
-}
 @media screen and (max-width: 480px) {
   .footer__set-container {
     margin-bottom: 60px;
@@ -517,15 +512,9 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .footer__multi-block {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
 }
 
@@ -575,9 +564,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   height: 50px;
   width: 200px;
@@ -659,6 +648,10 @@ header {
 
 .footer-socials > li + li {
   padding-left: 10px;
+}
+
+.footer__plane {
+  margin-left: 10px;
 }
 
 .address-links__map {
@@ -1970,19 +1963,6 @@ header {
 }
 .mobile-menu__contact-mail:hover, .mobile-menu__contact-mail:active, .mobile-menu__contact-mail:focus {
   color: #2196F3;
-}
-
-.mobile-menu__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .mobile-menu__nav-link--current {
