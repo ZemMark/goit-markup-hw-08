@@ -1333,6 +1333,7 @@ header {
 @media screen and (max-width: 479px) {
   .clients__item {
     margin-top: 0;
+    width: 210px;
     margin: 0 auto;
   }
 }
