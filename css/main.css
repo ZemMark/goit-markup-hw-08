@@ -581,7 +581,6 @@ header {
   position: relative;
   height: 50px;
   width: 200px;
-  margin: 0 auto;
   background-color: #2196F3;
   border-radius: 4px;
   color: #FFFFFF;
@@ -591,11 +590,17 @@ header {
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
+  margin-left: 12px;
 }
 @media screen and (min-width: 480px) {
   .footer-form__button-subscribe {
     max-width: 200px;
     max-height: 50px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer-form__button-subscribe {
+    margin: 0 auto;
   }
 }
 .footer-form__heading {

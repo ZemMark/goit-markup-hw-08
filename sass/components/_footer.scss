@@ -122,21 +122,26 @@
         position: relative;
         height: 50px;
         width: 200px;
-        margin: 0 auto;
         background-color: $accent-color;
         border-radius: 4px;
         color: #FFFFFF;
         border: none;
         cursor: pointer;
-    
+        
         font-weight: 700;
         font-size: 16px;
         line-height: 1.8;
         letter-spacing: 0.03em;
+        margin-left: 12px;
         @include phone{
             max-width: 200px;
             max-height: 50px;
         }
+        @media screen and (max-width:1199px) {
+            margin: 0 auto;
+            
+        }
+        
     
         // &::after {
         //     content: '';
