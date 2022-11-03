@@ -247,6 +247,7 @@ header {
 @media screen and (min-width: 1170px) {
   .header-contacts__contact-phone,
 .header-contacts__contact-mail {
+    font-size: 14px;
     padding-bottom: 32px;
     padding-top: 32px;
   }
@@ -265,6 +266,13 @@ header {
     margin-right: 8px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header-contacts__mini-icon {
+    width: 16px;
+    height: 10px;
+    margin-right: 10px;
+  }
+}
 
 .header-contacts__mini-icon--phone {
   width: 12px;
@@ -275,6 +283,13 @@ header {
     width: 10px;
     height: 14px;
     margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contacts__mini-icon--phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
   }
 }
 
