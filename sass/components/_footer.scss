@@ -41,12 +41,14 @@
 }
 .footer__multi-block{
     
-    @include phone{
+    @media screen and (max-width: 767px) {
+        
+    
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199) {
+    @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
