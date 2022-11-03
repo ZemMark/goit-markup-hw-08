@@ -269,7 +269,7 @@ header {
 @media screen and (min-width: 1200px) {
   .header-contacts__mini-icon {
     width: 16px;
-    height: 10px;
+    height: 12px;
     margin-right: 10px;
   }
 }
