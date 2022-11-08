@@ -805,6 +805,7 @@ header {
   .card-metha {
     height: 146px;
     padding-bottom: 56px;
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1376,7 +1377,6 @@ header {
 
 .clients__item {
   height: 92px;
-  width: 170px;
 }
 @media screen and (max-width: 479px) {
   .clients__item {
@@ -1388,6 +1388,11 @@ header {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__item {
     width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: 170px;
   }
 }
 
@@ -1807,7 +1812,6 @@ header {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
